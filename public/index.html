@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android远程控制台</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <header><h1>📡 远程控制台</h1><div id="status" class="status">连接中...</div></header>
+    <div class="main">
+        <div class="sidebar"><h2>📱 在线设备</h2><div id="deviceList">加载中...</div></div>
+        <div class="content">
+            <div class="info-card"><h3>当前设备信息</h3><div id="infoDetail">未选择设备</div></div>
+            <div class="action-card"><h3>📁 文件管理</h3><div class="file-browser"><input type="text" id="filePath" placeholder="/sdcard"><button id="browseBtn">浏览</button><div id="fileList"></div></div></div>
+            <div class="action-card"><h3>📸 实时截屏</h3><button id="screenshotBtn">截取屏幕</button><div id="screenshotPreview"></div></div>
+            <div class="action-card"><h3>💻 远程Shell</h3><textarea id="cmdInput" rows="3" placeholder="输入命令..."></textarea><button id="execBtn">执行</button><pre id="cmdOutput"></pre></div>
+        </div>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+</body>
+</html>
