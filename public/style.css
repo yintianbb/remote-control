@@ -1,0 +1,20 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#1e1e2f;color:#eee;font-family:sans-serif;padding:20px;}
+.container{max-width:1400px;margin:0 auto;}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.status{padding:5px 12px;border-radius:20px;background:#3a3a4a;}
+.main{display:flex;gap:20px;flex-wrap:wrap;}
+.sidebar{width:280px;background:#2a2a3a;border-radius:12px;padding:15px;}
+.device-list{max-height:500px;overflow-y:auto;}
+.device-item{padding:10px;background:#3a3a4a;margin-bottom:8px;border-radius:8px;cursor:pointer;}
+.device-item.active{background:#4a6fa5;}
+.content{flex:1;min-width:500px;}
+.info-card,.action-card{background:#2a2a3a;border-radius:12px;padding:15px;margin-bottom:20px;}
+.file-browser{display:flex;flex-direction:column;gap:10px;}
+#filePath{padding:8px;background:#1e1e2f;border:none;border-radius:6px;color:white;}
+button{background:#4a6fa5;border:none;padding:8px 16px;border-radius:6px;color:white;cursor:pointer;}
+#fileList{margin-top:10px;max-height:300px;overflow-y:auto;background:#1e1e2f;border-radius:8px;padding:10px;}
+.file-item{padding:5px 0;border-bottom:1px solid #3a3a4a;}
+.screenshot-preview img{max-width:100%;margin-top:10px;}
+#cmdInput{width:100%;background:#1e1e2f;border:none;border-radius:6px;color:white;padding:8px;}
+#cmdOutput{margin-top:10px;background:#1e1e2f;padding:10px;border-radius:6px;white-space:pre-wrap;max-height:200px;overflow-y:auto;}
